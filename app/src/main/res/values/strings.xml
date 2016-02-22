@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app">Pedometer</string>
+	<string name="bak">Back</string>
+	<string name="d_cmm">,</string>
+	<string name="d_day"></string>
+	<string name="d_mon">/</string>
+	<string name="w_fri">Fri</string>
+	<string name="w_mon">Mon</string>
+	<string name="w_sat">Sat</string>
+	<string name="w_sun">Sun</string>
+	<string name="w_thu">Thu</string>
+	<string name="w_tue">Tue</string>
+	<string name="w_wed">Wed</string>
+</resources>

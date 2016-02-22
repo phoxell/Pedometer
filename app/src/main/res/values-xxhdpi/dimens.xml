@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="icon_height">16dp</dimen>
+	<dimen name="icon_width">16dp</dimen>
+</resources>

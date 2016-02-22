@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app">卡卡计步</string>
+	<string name="bak">后台</string>
+	<string name="d_cmm"></string>
+	<string name="d_day">日</string>
+	<string name="d_mon">月</string>
+	<string name="w_fri">周五</string>
+	<string name="w_mon">周一</string>
+	<string name="w_sat">周六</string>
+	<string name="w_sun">周日</string>
+	<string name="w_thu">周四</string>
+	<string name="w_tue">周二</string>
+	<string name="w_wed">周三</string>
+</resources>

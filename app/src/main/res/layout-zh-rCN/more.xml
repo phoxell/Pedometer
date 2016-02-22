@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#2bd"
+		android:padding="12sp">
+
+		<ImageView
+			android:id="@+id/bak"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:src="@mipmap/icon"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:paddingTop="20dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="关于"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#bbbbbb"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="卡卡计步"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_marginTop="10dp"
+			android:background="#bbbbbb"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:paddingTop="10dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="版本"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#bbbbbb"/>
+
+		<TextView
+			android:id="@+id/ver"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_marginTop="10dp"
+			android:background="#bbbbbb"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingBottom="20dp"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:paddingTop="10dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="版权"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#bbbbbb"/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="© 杭州孚石电子有限公司"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:background="#000000"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:paddingTop="20dp">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="设备"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#bbbbbb"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:id="@+id/dev"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/rnk"
+				android:text="等级 "
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#000000"/>
+
+			<TextView
+				android:id="@+id/rnk"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_alignParentRight="true"
+				android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#000000"/>
+		</RelativeLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_marginTop="10dp"
+			android:background="#bbbbbb"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/bug"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:paddingTop="10dp"
+		android:visibility="invisible">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Debug"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#bbbbbb"/>
+
+		<TextView
+			android:id="@+id/val"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_marginTop="10dp"
+			android:background="#bbbbbb"/>
+	</LinearLayout>
+
+</LinearLayout>

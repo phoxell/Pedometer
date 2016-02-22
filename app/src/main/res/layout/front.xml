@@ -1,0 +1,54 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".Front">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="5"
+		android:background="#2bd">
+
+		<FrameLayout
+			android:id="@+id/day"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingBottom="@dimen/activity_vertical_margin"
+			android:paddingLeft="@dimen/activity_horizontal_margin"
+			android:paddingRight="@dimen/activity_horizontal_margin"
+			android:paddingTop="@dimen/activity_vertical_margin"/>
+
+		<com.kalkr.pedometer.Steps
+			android:id="@+id/stp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:textColor="#fff"/>
+
+		<com.phoxell.widget.More
+			android:id="@+id/mor"
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:layout_gravity="right"/>
+	</FrameLayout>
+
+	<FrameLayout
+		android:id="@+id/pat"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="6"
+		android:background="#fff"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin">
+
+		<com.kalkr.pedometer.Spectral
+			android:id="@+id/spc"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	</FrameLayout>
+</LinearLayout>

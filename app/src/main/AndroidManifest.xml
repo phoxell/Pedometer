@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	package="com.kalkr.pedometer"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+	<application
+		android:name=".Meter"
+		android:allowBackup="true"
+		android:icon="@mipmap/icon"
+		android:label="@string/app"
+		android:theme="@android:style/Theme.NoTitleBar">
+
+		<activity
+			android:name=".Front"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name=".More"
+			android:screenOrientation="portrait"/>
+
+		<receiver
+			android:name="com.phoxell.activity.Pulse"
+			android:enabled="true"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.TIME_TICK"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.kalkr.BACK"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="com.phoxell.activity.PULSE"/>
+			</intent-filter>
+		</receiver>
+
+		<service
+			android:name=".Back"
+			android:label="@string/bak"/>
+	</application>
+
+</manifest>
